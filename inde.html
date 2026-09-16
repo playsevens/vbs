@@ -1,0 +1,707 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>
+  atOptions = {
+    'key' : '1ea552807cf18db4c54a4a6dd1b46203',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/1ea552807cf18db4c54a4a6dd1b46203/invoke.js"></script>
+<meta charset="UTF-8">
+<meta name="Pen Tor 2026 เป็นต่อ 2026 EP.36" content="width=device-width, initial-scale=1.0">
+
+<title>Pen Tor 2026 เป็นต่อ 2026 EP.36</title>
+
+<meta name="description"
+content="ThaiFlix -Thailand Series 2026">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080808;
+    color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:65px;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 5%;
+    background:rgba(0,0,0,.88);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:25px;
+    font-weight:900;
+    color:#e50914;
+}
+
+.logo span{
+    color:#fff;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:#ddd;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:#fff;
+}
+
+.search{
+    background:#1b1b1b;
+    border:1px solid #333;
+    border-radius:20px;
+    padding:9px 15px;
+    color:#fff;
+    outline:none;
+    width:180px;
+}
+
+/* HERO */
+.hero{
+    min-height:620px;
+    display:flex;
+    align-items:center;
+    padding:100px 7% 70px;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(90deg,#080808 0%,rgba(8,8,8,.88) 35%,rgba(8,8,8,.25) 75%,#080808 100%),
+    linear-gradient(0deg,#080808 0%,transparent 35%),
+    url("https://i.mydramalist.com/mO5Z7b_4f.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.badge{
+    display:inline-block;
+    background:#e50914;
+    padding:7px 13px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:55px;
+    line-height:1.05;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ccc;
+    line-height:1.6;
+    font-size:15px;
+    max-width:520px;
+}
+
+.info{
+    margin:18px 0;
+    color:#bbb;
+    font-size:14px;
+}
+
+.watch{
+    display:inline-block;
+    background:#e50914;
+    color:#fff;
+    padding:13px 24px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:8px;
+}
+
+.watch:hover{
+    background:#ff1723;
+}
+
+.more{
+    display:inline-block;
+    background:#333;
+    color:#fff;
+    padding:13px 24px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* CONTENT */
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.section{
+    margin:35px 0;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.section-title h2{
+    font-size:23px;
+}
+
+.section-title a{
+    color:#aaa;
+    font-size:13px;
+    text-decoration:none;
+}
+
+/* MOVIE GRID */
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
+}
+
+.movie{
+    position:relative;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.movie:hover{
+    transform:translateY(-7px);
+}
+
+.poster{
+    width:100%;
+    aspect-ratio:2/3;
+    object-fit:cover;
+    border-radius:7px;
+    display:block;
+    background:#151515;
+}
+
+.movie-title{
+    margin-top:9px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.movie-info{
+    color:#888;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.rating{
+    color:#f5c518;
+}
+
+.tag{
+    position:absolute;
+    top:8px;
+    left:8px;
+    background:#e50914;
+    padding:5px 7px;
+    border-radius:4px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+/* SEARCH */
+#searchBox{
+    display:none;
+    margin:90px auto 20px;
+    width:90%;
+    max-width:600px;
+}
+
+#searchInput{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    background:#222;
+    color:#fff;
+}
+
+/* FOOTER */
+footer{
+    margin-top:70px;
+    padding:40px 5%;
+    border-top:1px solid #222;
+    text-align:center;
+    color:#777;
+    font-size:13px;
+}
+
+footer strong{
+    color:#e50914;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .movie-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        padding:0 4%;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    .search{
+        width:130px;
+    }
+
+    .hero{
+        min-height:600px;
+        padding:120px 6% 60px;
+        background:
+        linear-gradient(0deg,#080808 5%,rgba(8,8,8,.3) 80%),
+        linear-gradient(90deg,rgba(8,8,8,.9),rgba(8,8,8,.25)),
+        url("https://i.mydramalist.com/mO5Z7b_4f.jpg");
+
+        background-size:cover;
+        background-position:center;
+    }
+
+    .hero h1{
+        font-size:37px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .movie-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+<script>
+  atOptions = {
+    'key' : '1ea552807cf18db4c54a4a6dd1b46203',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/1ea552807cf18db4c54a4a6dd1b46203/invoke.js"></script>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">
+        THAI<span>FLIX</span>
+    </div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#latest">New Movies</a>
+        <a href="#popular">Populer</a>
+        <a href="#action">Action</a>
+        <a href="#romance">Romance</a>
+    </div>
+
+    <input
+        class="search"
+        type="text"
+        placeholder="movie search..."
+        onkeyup="searchMovie(this.value)"
+    >
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">THAILAND MOVIE 2026</span>
+
+        <h1>Pen Tor 2026 เป็นต่อ 2026 EP.36</h1>
+
+        <div class="info">
+            ⭐ 8.2 &nbsp; • &nbsp; 2026 &nbsp; • &nbsp; Drama
+            &nbsp; • &nbsp; Family
+        </div>
+
+            <p>เพลิดเพลินกับการรับชมภาพยนตร์และซีรีส์ล่าสุดในความคมชัดระดับ Full HD.</p>
+    <a class="btn btn-primary" href="https://t.co/VM5K2Ar0w5">▶▶ Watch Now</a>
+    <a class="btn btn-primary" href="https://t.co/VM5K2Ar0w5">▶▶ Watch Play</a>
+    <a class="btn btn-light" href="#trending">＋ My List</a>
+
+        <a href="#latest" class="more">
+            + Detail
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTENT -->
+<main class="container">
+
+
+<!-- รับชมภาพยนตร์และซีรีส์ไทยเรื่องใหม่ล่าสุดปี 2026 -->
+<section class="section" id="latest">
+
+    <div class="section-title">
+        <h2>🔥 Film Thailand</h2>
+        <a href="#">รับชมภาพยนตร์และซีรีส์ไทยเรื่องใหม่ล่าสุดปี 2026</a>
+    </div>
+
+    <div class="movie-grid">
+
+
+        <div class="movie">
+
+            <span class="tag">NEW</span>
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/9TemplesToHeaven.jpg"
+            alt="9 Temples to Heaven">
+
+            <div class="movie-title">
+                9 Temples to Heaven
+            </div>
+
+            <div class="movie-info">
+                2026 • Drama
+                <span class="rating"> ★ 8.2</span>
+            </div>
+
+        </div>
+
+
+        <div class="movie">
+
+            <span class="tag">NEW</span>
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/henrys-first-dates.jpg"
+            alt="Henry's First Dates">
+
+            <div class="movie-title">
+                Henry's First Dates
+            </div>
+
+            <div class="movie-info">
+                2026 • Romance
+                <span class="rating"> ★ 7.8</span>
+            </div>
+
+        </div>
+
+
+        <div class="movie">
+
+            <span class="tag">NEW</span>
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/inherit.jpg"
+            alt="Inherit">
+
+            <div class="movie-title">
+                Inherit
+            </div>
+
+            <div class="movie-info">
+                2026 • Horror
+                <span class="rating"> ★ 8.0</span>
+            </div>
+
+        </div>
+
+
+        <div class="movie">
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/yak-mai.jpg"
+            alt="Yak Mai">
+
+            <div class="movie-title">
+                Yak Mai
+            </div>
+
+            <div class="movie-info">
+                2026 • Drama
+                <span class="rating"> ★ 7.7</span>
+            </div>
+
+        </div>
+
+
+        <div class="movie">
+
+            <span class="tag">2026</span>
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/thai-movie-5.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                Thai Movie 2026
+            </div>
+
+            <div class="movie-info">
+                2026 • Action
+                <span class="rating"> ★ 7.5</span>
+            </div>
+
+        </div>
+
+
+        <div class="movie">
+
+            <span class="tag">HOT</span>
+
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/thai-movie-6.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                The New Journey
+            </div>
+
+            <div class="movie-info">
+                2026 • Adventure
+                <span class="rating"> ★ 7.9</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POPULAR -->
+<section class="section" id="popular">
+
+    <div class="section-title">
+        <h2>🔥 Popular Thailand</h2>
+        <a href="#">รับชมภาพยนตร์และซีรีส์ไทยเรื่องใหม่ล่าสุดปี 2026</a>
+    </div>
+
+    <div class="movie-grid">
+
+        <div class="movie">
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/movie7.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                Thai Horror Story
+            </div>
+
+            <div class="movie-info">
+                Horror • 2026
+                <span class="rating"> ★ 8.4</span>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/movie8.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                Bangkok Love
+            </div>
+
+            <div class="movie-info">
+                Romance • 2026
+                <span class="rating"> ★ 8.1</span>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/movie9.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                Muay Thai Warrior
+            </div>
+
+            <div class="movie-info">
+                Action • 2026
+                <span class="rating"> ★ 8.3</span>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img
+            class="poster"
+            src="https://image.tmdb.org/t/p/w500/movie10.jpg"
+            alt="Thai Movie">
+
+            <div class="movie-title">
+                The Last Kingdom
+            </div>
+
+            <div class="movie-info">
+                Action • 2026
+                <span class="rating"> ★ 7.9</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GENRE -->
+<section class="section" id="action">
+
+    <div class="section-title">
+        <h2>🎬 Genre Thailand</h2>
+    </div>
+
+    <div style="
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+    ">
+
+        <a href="#" class="more">Action</a>
+        <a href="#" class="more">Horror</a>
+        <a href="#" class="more">Romance</a>
+        <a href="#" class="more">Drama</a>
+        <a href="#" class="more">Comedy</a>
+        <a href="#" class="more">Thriller</a>
+        <a href="#" class="more">Family</a>
+        <a href="#" class="more">Adventure</a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 <strong>Bigs Movies</strong>
+    </p>
+
+    <br>
+
+    <p>
+        รับชมภาพยนตร์และซีรีส์ไทยเรื่องใหม่ล่าสุดปี 2026
+    </p>
+
+</footer>
+
+
+<script>
+
+/* SEARCH FILM */
+
+function searchMovie(keyword){
+
+    keyword = keyword.toLowerCase();
+
+    let movies =
+    document.querySelectorAll(".movie");
+
+    movies.forEach(function(movie){
+
+        let title =
+        movie.querySelector(".movie-title")
+        .innerText
+        .toLowerCase();
+
+        if(title.includes(keyword)){
+            movie.style.display = "";
+        }else{
+            movie.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+<script src="https://pl28399908.effectivecpmnetwork.com/82/8f/01/828f0117fe4153d1d618e5dc2072e71f.js"></script>
+</html>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5005340,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5005340&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
